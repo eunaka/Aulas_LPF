@@ -18,6 +18,7 @@ mergeSort [] = []
 mergeSort [a] = [a]
 mergeSort l
 	| head l1 > head l2 = (head l1):(mergeSort ((drop 1 l1) ++ l2))
-	| otherwise = (head l2):(mergeSort ((drop 1 l1) ++ l2))
-	where  l1 =  mergeSort (take (div (length l) 2) l) 
-		   l2 =  mergeSort (drop (div (length l) 2) l) 	
+	| otherwise = (head l2):(mergeSort ((drop 1 l2) ++ l1))
+	where  
+		l1 =  mergeSort (take (div (length l) 2) l) 
+		l2 =  mergeSort (drop (div (length l) 2) l) 	
