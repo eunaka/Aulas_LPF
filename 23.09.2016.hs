@@ -107,4 +107,4 @@ some (h:t)
 
 andL l [] = head l
 andL [] l = head l
-andL (h1:t1) (h2:t2) = 
+andL (h1:t1) (h2:t2) =
