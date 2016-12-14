@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+=======
+{-
+
+07/10/2016
+Resolução da ficha de questões
+
+-}
+
+
+
+>>>>>>> branch 'master' of https://github.com/yuri971/Aulas_LPF.git
 nat = 0:(sucessor nat) where
 	sucessor (h:t) = (h+1):(sucessor t)
 
